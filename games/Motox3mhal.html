@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/cdn-cgi/apps/head/un3TA5cDgC5oClLThjuw3_AKfF4.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+<script src="index.js"></script>
+<script language="javascript" type="text/javascript" src="/headscript.txt"></script>
+<link rel="shortcut icon" href="c.png" />
+<link rel="stylesheet" href="index.css">|
+<link href="/css/navbar.css" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHX0LCZKBM"></script>
+<style>
+
+</style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- <title>Play Friday Night Funkin Week 7 Unblocked | FNF week 7 Unblocked </title> -->
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="icon" type="image/jpg" href="c.png">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="nav-bar">
+    <div class="nav-logo">V2</div>
+    <div class="nav-links-container">
+        <a class="nav-link" href="/index.html" id="topLink">Home</a>
+        <a class="nav-link" href="/pages/games.html" id="aboutLink">Games</a>
+        <a class="nav-link" href="chatgbt.html" id="portfolioLink">Chatgbt</a>
+        <a class="nav-link" href="#teamSection" id="teamLink">LeaderBoard</a>
+        <a class="nav-link" href="Support.html" id="servicesLink">Support</a>
+    </div>
+</div>
+    <script src="https://kit.fontawesome.com/a02757a93f.js" crossorigin="anonymous"></script>
+<script language="javascript" type="text/javascript" src="/header.txt"></script>    
+  
+  <h1 class="fgbg1">MotoX3M Halloween</h1>
+
+
+   <iframe src="https://www.jhltop.com/proxy/aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbQ==/rvvASMiM/b8a342904608470a9f3382337aca3558/?timestamp=1646190480&countryCode=en&siteLocale=en&locale=en&gd_sdk_referrer_url=https%3A%2F%2Fkizi.com%2Fgames%2Fmoto-x3m-spooky-land&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2tpemkuY29tL2dhbWVzL21vdG8teDNtLXNwb29reS1sYW5kIiwicGFyZW50RG9tYWluIjoia2l6aS5jb20iLCJ0b3BEb21haW4iOiJzd2VldHN3ZWV0MS5oZXJva3VhcHAuY29tIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJzd2VldHN3ZWV0MS5oZXJva3VhcHAuY29tIiwidmVyc2lvbiI6IjEuNS40In0%253D" class="frame" overflow="hidden" scrolling="no" id="framedthingy" onmouseover='circle=document.getElementById("circle");circle.style.display = "none";' onmouseout='circle=document.getElementById("circle");circle.style = "";'> </iframe>
+   <div id="infodiv">
+    
+    <span id="fpscount" style="color:white; margin-left:50px; top:42%;"></span>
+    <span class="material-symbols-outlined" style="float:right;margin-right:50px;top:42%;color:white;cursor:pointer;"onclick="openFullscreen();">
+        fullscreen
+        </span>
+</div>
+   <div class="gameinfo"><h1 class="gameinfoh2">Description:</h1><br \><p class="gameinfotxt">Moto X3M is an online bike racing game. The goal is to race your motorbike through levels with massive, moving obstacles that you have to jump over or avoid. You can flip in the air to decrease your final time and earn a perfect score. Know when to stop, or crash and respawn. Try to complete the levels in as little time as possible.</p></div>
+   <script>
+    var elem = document.getElementsByClassName("frame")[0];
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+   </script>
+   <script>
+    
+    const times = [];
+let fps;
+fpscount = document.getElementById("fpscount")
+function refreshLoop() {
+  window.requestAnimationFrame(() => {
+    const now = performance.now();
+    while (times.length > 0 && times[0] <= now - 1000) {
+      times.shift();
+    }
+    times.push(now);
+    fps = times.length;
+    //console.log(fps)
+    fpscount.innerHTML = "FPS:" + fps
+    refreshLoop();
+  });
+}
+
+refreshLoop();
+   </script>
+   
+  <div>
+<!--<h1 class="fgbg1" style="margin-top:40px; margin-bottom:40px;">OTHER GAMES</h1>
+<a href="https://discord.gg/BeFEgMegD8"><img src="discord.png" class="discordpng"></a>
+<div id="gamesdiv" style="margin-bottom:40px;"></div>
+
+</div>-->
+
+    <script>
+        
+      function goBack() {
+  window.history.back();
+      }
+      
+      if (window.location.href.indexOf("staticviewer") > -1) {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            var name = urlSearchParams.get('id');
+            
+}
+else{
+    var name=  window.location.pathname.replace('/games/', '')
+} 
+if (window.location.toString().toLowerCase().includes("fnf")){
+    jsonf="/fnfgames.json"
+}
+else{
+    jsonf="/games.json"
+}
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+$.getJSON(jsonf, function(json) {
+    function addgame(i){
+        gamesdiv = document.getElementById("gamesdiv")
+    n = Object.keys(json)[i]
+    title = json[n].title1
+    img = json[n].image
+    newpath = "games/" + n
+    if (window.location.toString().includes("github") || window.location.toString().includes("localhost")){
+      newpath= "/staticviewer.html?id=" + n
+    }
+    if (title == "FNF Mods"){
+      newpath = "/gamefiles/fnfmodselection.html"
+    }
+    
+    gamesdiv.innerHTML += '<div class="gamediv"><img class="gameimg"src="' + img + '"><div class="outergametext"><p class="gametext">' + title+'</p></div><a href="' + newpath +'" class="gamebtn"><button class="bn9"><span class="btnspan"><span class="btnplay">Play</span></span></button></a></div>    '
+    }
+    function randomgames(){
+    num1 = getRandomInt(Object.keys(json).length)
+    num2 = getRandomInt(Object.keys(json).length)
+    num3 = getRandomInt(Object.keys(json).length)
+        if (num1 != num2){
+            if (num2 != num3){
+                if (num1!= num3){
+                    addgame(num1)
+                    addgame(num2)
+                    addgame(num3)
+                }
+            }
+        }
+}
+
+    x =json[name.replaceAll("%20", " ")]
+    
+    try {
+      $('head').append('<title>'+ x.title1 +' Unblocked - Cookieduck Games</title>');
+    }
+    catch(err) {
+      
+      $('head').append('<meta name="robots" content="noindex">');
+    }
+    $('head').append('<meta name="description" content="' + x.descriptionmeta + '" />');
+    document.getElementsByClassName("fgbg1")[0].innerHTML = x.title2
+    if (String(x.proxy)=="true"){
+        document.getElementById("framedthingy").name = x.framesrc
+        include("/gamefiles/lazyloadv3.js")
+    }
+    
+    else if (String(x.flash)=="true") {
+        
+
+        document.getElementById("framedthingy").src = '/startflashgame.html?id=' + x.flashsrc
+
+    }
+    else{
+        if (String(x.framesrc).includes("https://")){
+            document.getElementById("framedthingy").src = x.framesrc
+        }
+        else{
+        document.getElementById("framedthingy").src = '/gamefiles/' + x.framesrc}
+    }
+    document.getElementsByClassName("gameinfotxt")[0].innerHTML = x.description
+    for (let i=0;i<x.tags.length;i++){
+    $('.gameinfo').append('<span class="tagspan" > ' + x.tags[i]+'</span>');
+    }
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QHX0LCZKBM');
+    randomgames();
+});
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  
+</script>
+</body>
+</html>

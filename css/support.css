@@ -1,0 +1,661 @@
+
+
+body {
+  background: rgb(27, 27, 41);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  font: 400 1em/1.5 "neuton";
+ color: rgba(255, 255, 255, 0.25);
+ text-align: center;
+  shrink {overflow:hidden; display:inline-block;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+ }
+
+.nft,
+.nft2 {
+   max-width: 400px;
+  width: 100%;
+  margin: 20px;
+}
+
+.nft {
+  margin-bottom: 20px;
+
+  padding: 10px;
+
+  z-index: 1;
+  order: 1;
+  user-select: none;
+  max-width: 300px;
+  margin: 50rem auto;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+
+  transition: 0.5s all;
+  margin-right: 20px;
+}
+
+.nft hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 0;
+}
+
+.nft ins {
+  text-decoration: none;
+}
+
+.nft .main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 1rem;
+}
+
+.nft .main .tokenImage {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.nft .main .description {
+  margin: 0.5rem 0;
+  color: #a89ec9;
+}
+
+.nft .main .tokenInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft .main .tokenInfo .price {
+  display: flex;
+  align-items: center;
+  color: #ee83e5;
+  font-weight: 700;
+}
+
+.nft .main .tokenInfo .price ins {
+  margin-left: -0.3rem;
+  margin-right: 0.5rem;
+}
+
+.nft .main .tokenInfo .duration {
+  display: flex;
+  align-items: center;
+  color: #a89ec9;
+  margin-right: 0.2rem;
+}
+
+.nft .main .tokenInfo .duration ins {
+  margin: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.nft .main .creator {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  margin-bottom: -0.3rem;
+}
+
+.nft .main .creator ins {
+  color: #a89ec9;
+  text-decoration: none;
+}
+
+.nft .main .creator .wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff22;
+  padding: 0.3rem;
+  margin: 0;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 4px #000000aa;
+}
+.nft .main .creator .wrapper img {
+  border-radius: 100%;
+  border: 1px solid #ffffff22;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  margin: 0;
+}
+.nft ::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.7s all;
+}
+.nft:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  filter: brightness(1.3);
+}
+.nft:hover ::before {
+  filter: brightness(0.5);
+  top: -100%;
+  left: 200%;
+}
+
+.bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg h1 {
+  font-size: 20rem;
+  filter: opacity(0.5);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+.more-pens {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-decoration: none;
+  background: #212121;
+  padding: 4px 8px;
+  color: #f7f7f7;
+}
+a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
+  background: #edf3f8;
+  color: #212121;
+}
+
+.nft2 {
+  padding: 10px;
+   margin: 10rem auto;
+  max-width: 300px;
+
+
+  z-index: 1;
+  order: 1;
+  user-select: none;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: 0.5s all;
+  margin-right: 20px;
+}
+
+.nft2 hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 0;
+}
+
+.nft2 ins {
+  text-decoration: none;
+}
+
+.nft2 .main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 1rem;
+}
+
+.nft2 .main .tokenImage {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.nft2 .main .description {
+  margin: 0.5rem 0;
+  color: #a89ec9;
+}
+
+.nft2 .main .tokenInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft2 .main .tokenInfo .price {
+  display: flex;
+  align-items: center;
+  color: #ee83e5;
+  font-weight: 700;
+}
+
+.nft2 .main .tokenInfo .price ins {
+  margin-left: -0.3rem;
+  margin-right: 0.5rem;
+}
+
+.nft2 .main .tokenInfo .duration {
+  display: flex;
+  align-items: center;
+  color: #a89ec9;
+  margin-right: 0.2rem;
+}
+
+.nft2 .main .tokenInfo .duration ins {
+  margin: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.nft2 .main .creator {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  nft2: -0.3rem;
+}
+
+.nft2 .main .creator ins {
+  color: #a89ec9;
+  text-decoration: none;
+}
+
+.nft2 .main .creator .wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff22;
+  padding: 0.3rem;
+  margin: 0;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 4px #000000aa;
+}
+.nft2 .main .creator .wrapper img {
+  border-radius: 100%;
+  border: 1px solid #ffffff22;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  margin: 0;
+}
+.nft2 ::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.7s all;
+}
+.nft2:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  filter: brightness(1.3);
+}
+.nft2:hover ::before {
+  filter: brightness(0.5);
+  top: -100%;
+  left: 200%;
+}
+
+.h2 {
+  color: white;
+}
+
+
+
+p2 {
+ text-transform: uppercase;
+ transform-origin: center;
+ letter-spacing: .5em;
+ display: inline-block;
+ border: 4px double rgba(255, 255, 255, 0.25);
+ border-width: 4px 0;
+ padding: 1.5em 0em;
+ width: 20cm;
+ font-family: "arial";
+ position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+span {
+ font: 700 5em/1 "oswald", sans-serif;
+ display: block;
+ letter spacing: 0;
+ padding: .25em 0 .325em;
+ margin: 0 auto;
+ text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+ background-size: 400% 400%;
+ background-image: linear-gradient(to right, #ef9e9d, #fff989, #b6fcfe);
+ -webkit-background-clip: text;
+ text-fill-color: transparent;
+ animation: rainbow 5s ease infinite;
+}
+
+@keyframes rainbow {
+ 0%, 100% {
+  background-position: 0% 50%;
+ }
+ 50% {
+  background-position: 100% 50%;
+ }
+}
+
+
+ p3 {
+	 text-transform: uppercase;
+	 letter-spacing: 0.5em;
+	 display: inline-block;
+	 padding: 1.5em 0em;
+	 position: absolute;
+	 top: 11%;
+	 left: 50%;
+	 width: 40em;
+	 margin: 0 0 0 -20em;
+   font-size: 25px;
+}
+ p3 span {
+	 font: 700 3em "Oswald", sans-serif;
+	 letter-spacing: 0;
+	 padding: 0.25em 0 0.325em;
+	 display: block;
+	 margin: 0 auto;
+	 text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+	/* Clip Background Image */
+	 background: url(https://previews.123rf.com/images/sergiolucci/sergiolucci2003/sergiolucci200300122/142638517-3d-wave-fluid-colors-liquid-shape-ink-splash-colorful-cloud-flow-wave-modern-poster-color-background.jpg) repeat-y;
+	 -webkit-background-clip: text;
+	 background-clip: text;
+	/* Animate Background Image */
+	 -webkit-text-fill-color: transparent;
+	 -webkit-animation: aitf 20s linear infinite;
+	/* Activate hardware acceleration for smoother animations */
+	 -webkit-transform: translate3d(0, 0, 0);
+	 -webkit-backface-visibility: hidden;
+}
+/* Animate Background Image */
+ @-webkit-keyframes aitf {
+	 0% {
+		 background-position: 0% 50%;
+	}
+	 100% {
+		 background-position: 100% 50%;
+	}
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-light: #dcdcdc;
+  --color-bg: #010101;
+  --color-accent: #b62eff;
+  --color-ghost: #f30111;
+  --color-pacman: #f1eb35;
+  --color-dots: #e17f38;
+  --dot-size: 4px;
+  --dot-gutter: 8px;
+  --animation-duration:4000ms;
+  --animation-easing: linear;
+  --bg-top-dots: no-repeat top right / 100% var(--dot-size) repeating-linear-gradient(to right, var(--color-dots), var(--color-dots) var(--dot-size), transparent var(--dot-size), transparent var(--dot-gutter));
+  --bg-top-line-start: no-repeat top right / 100% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-top-line-mid: no-repeat top right / 0% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-top-line-restart: no-repeat top left / 0% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-top-line-end: no-repeat top left / 100% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-right-dots: no-repeat bottom right / var(--dot-size) 100% repeating-linear-gradient(to bottom, var(--color-dots), var(--color-dots) var(--dot-size), transparent var(--dot-size), transparent var(--dot-gutter));
+  --bg-right-line-start: no-repeat bottom right / var(--dot-size) 100% linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-right-line-mid: no-repeat bottom right / var(--dot-size) 0% linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-right-line-restart: no-repeat top right / var(--dot-size) 0% linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-right-line-end: no-repeat top right / var(--dot-size) 100% linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-bottom-dots: no-repeat bottom left / 100% var(--dot-size) repeating-linear-gradient(to right, var(--color-dots), var(--color-dots) var(--dot-size), transparent var(--dot-size), transparent var(--dot-gutter));
+  --bg-bottom-line-start: no-repeat bottom left / 100% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-bottom-line-mid: no-repeat bottom left / 0% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-bottom-line-restart: no-repeat bottom right / 0% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-bottom-line-end: no-repeat bottom right / 100% var(--dot-size) linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-left-dots: no-repeat top left / var(--dot-size) 100% repeating-linear-gradient(to top, var(--color-dots), var(--color-dots) var(--dot-size), transparent var(--dot-size), transparent var(--dot-gutter));
+  --bg-left-line-start: no-repeat bottom left / var(--dot-size) 0% linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-left-line-mid: no-repeat bottom left / var(--dot-size) 100% linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-left-line-restart: no-repeat top left / var(--dot-size) 100% linear-gradient(to right, var(--color-accent), var(--color-accent));
+  --bg-left-line-end: no-repeat top left / var(--dot-size) 0% linear-gradient(to right, var(--color-accent), var(--color-accent));
+}
+
+.pacman-button {
+  left: 16%;
+  top: 3%;
+  background: none;
+  color: var(--color-light);
+  position: absolute;
+  padding: 0;
+  border: none;
+  font-size: 1.25rem;
+  animation: infinite animate-border var(--animation-duration) var(--animation-easing);
+  animation-play-state: paused;
+  font-family: "Press Start 2p", sans-serif;
+  margin: 16rem;
+  line-height: 1.4;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 0.5rem var(--color-accent);
+  background: var(--bg-top-line-start), var(--bg-top-dots), var(--bg-right-line-start), var(--bg-right-dots), var(--bg-bottom-line-start), var(--bg-bottom-dots), var(--bg-left-line-start), var(--bg-left-dots);
+}
+.pacman-button:focus, .pacman-button:hover {
+  outline: none;
+  animation-play-state: running;
+}
+.pacman-button:focus .ghost, .pacman-button:focus .ghost:after, .pacman-button:focus .pacman, .pacman-button:focus .pacman:after, .pacman-button:hover .ghost, .pacman-button:hover .ghost:after, .pacman-button:hover .pacman, .pacman-button:hover .pacman:after {
+  animation-play-state: running;
+}
+.pacman-button:focus .button-label, .pacman-button:hover .button-label {
+  box-shadow: 0 0 1rem var(--color-accent);
+}
+.pacman-button:active {
+  color: var(--color-accent);
+}
+
+.button-label {
+  display: block;
+  padding: 1.5rem;
+  border: 4px solid var(--color-accent);
+  box-shadow: 0 0 0.5rem var(--color-accent);
+  text-shadow: 0 0 0.5rem currentColor;
+  z-index: -1;
+}
+
+.ghost {
+  --eye: 50% 50% radial-gradient( ellipse, var(--color-light), var(--color-light) 50%, transparent 50%);
+  width: 1.375rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 80% 80% 50% 50%;
+  animation: infinite ghost-walk var(--animation-duration) var(--animation-easing) paused;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0% 100%, 25% 80%, 50% 100%, 75% 80%, 100% 100%, 100% 0%, 0% 0%);
+  background: no-repeat left 5% top 30%/var(--eye), no-repeat right 5% top 30%/var(--eye), var(--color-ghost);
+}
+.ghost:after {
+  --pupil: 35% 100% linear-gradient(var(--color-accent), var(--color-accent) );
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  right: 20%;
+  height: 20%;
+  animation: infinite pupil-shift var(--animation-duration) paused;
+  background: no-repeat left top/var(--pupil), no-repeat right top/var(--pupil);
+}
+
+.pacman {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 100%;
+  animation: infinite pacman-walk var(--animation-duration) var(--animation-easing);
+  animation-play-state: paused;
+  transform: translate(-50%, -50%);
+}
+.pacman:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--color-pacman);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(50% 50%, 80% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 20% 0%);
+  border-radius: 100%;
+  animation: infinite chomp-chomp-chomp 250ms linear paused;
+}
+
+@keyframes pupil-shift {
+  0%, 24% {
+    transform: translate(20%, 0%);
+  }
+  25%, 49% {
+    transform: translate(0%, 35%);
+  }
+  50%, 74% {
+    transform: translate(-20%, 0);
+  }
+  75%, 100% {
+    transform: translate(0%, -35%);
+  }
+}
+@keyframes chomp-chomp-chomp {
+  0% {
+    clip-path: polygon(50% 50%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+  }
+}
+@keyframes animate-border {
+  0% {
+    background: var(--bg-top-line-start), var(--bg-top-dots), var(--bg-right-line-start), var(--bg-right-dots), var(--bg-bottom-line-start), var(--bg-bottom-dots), var(--bg-left-line-start), var(--bg-left-dots);
+  }
+  25% {
+    background: var(--bg-top-line-mid), var(--bg-top-dots), var(--bg-right-line-start), var(--bg-right-dots), var(--bg-bottom-line-start), var(--bg-bottom-dots), var(--bg-left-line-mid), var(--bg-left-dots);
+  }
+  25.1% {
+    background: var(--bg-top-line-restart), var(--bg-top-dots), var(--bg-right-line-start), var(--bg-right-dots), var(--bg-bottom-line-start), var(--bg-bottom-dots), var(--bg-left-line-mid), var(--bg-left-dots);
+  }
+  50% {
+    background: var(--bg-top-line-end), var(--bg-top-dots), var(--bg-right-line-mid), var(--bg-right-dots), var(--bg-bottom-line-start), var(--bg-bottom-dots), var(--bg-left-line-mid), var(--bg-left-dots);
+  }
+  50.1% {
+    background: var(--bg-top-line-end), var(--bg-top-dots), var(--bg-right-line-restart), var(--bg-right-dots), var(--bg-bottom-line-start), var(--bg-bottom-dots), var(--bg-left-line-mid), var(--bg-left-dots);
+  }
+  75% {
+    background: var(--bg-top-line-end), var(--bg-top-dots), var(--bg-right-line-end), var(--bg-right-dots), var(--bg-bottom-line-mid), var(--bg-bottom-dots), var(--bg-left-line-mid), var(--bg-left-dots);
+  }
+  75.1% {
+    background: var(--bg-top-line-end), var(--bg-top-dots), var(--bg-right-line-end), var(--bg-right-dots), var(--bg-bottom-line-restart), var(--bg-bottom-dots), var(--bg-left-line-restart), var(--bg-left-dots);
+  }
+  100% {
+    background: var(--bg-top-line-end), var(--bg-top-dots), var(--bg-right-line-end), var(--bg-right-dots), var(--bg-bottom-line-end), var(--bg-bottom-dots), var(--bg-left-line-end), var(--bg-left-dots);
+  }
+}
+@keyframes ghost-walk {
+  0%, 100% {
+    left: 0%;
+    top: 0%;
+    --pupil-pos: 0%;
+  }
+  25% {
+    --pupil-pos: 100%;
+    left: 100%;
+    top: 0%;
+  }
+  50% {
+    left: 100%;
+    top: 100%;
+  }
+  75% {
+    left: 0%;
+    top: 100%;
+  }
+}
+@keyframes pacman-walk {
+  0% {
+    left: 0%;
+    top: 100%;
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  25%, 26% {
+    left: 0%;
+    top: 0%;
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  26% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50%, 51% {
+    left: 100%;
+    top: 0%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  51% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  75% {
+    left: 100%;
+    top: 100%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  76% {
+    left: 100%;
+    top: 100%;
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+  100% {
+    left: 0%;
+    top: 100%;
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+}
