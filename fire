@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Stealth</title>
+    <link href="snake.css" rel="stylesheet" type="text/css" />
+    <link href="back2.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+
+    
+  <h1>SweetSweet</h1>
+  <h2>For students, by students.</h2>
+  <script>
+    
+     function goBack() {
+  window.history.back();
+}
+    
+    
+    (url);
+
+var newWin = window.open
+function MyWindow1(){
+
+var win = window.open()
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = "https://www.cleverapp.us/homme.html";
+win.document.body.appendChild(iframe)
+location.replace("https://google.com")
+}
+  </script>
+
+<a onclick="MyWindow1()">enter</a>
+    <script src="script.js"></script>
+  </body>
+</html>
